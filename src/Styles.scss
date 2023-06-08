@@ -1,0 +1,218 @@
+$myColor : #dddcdb;
+$fontFamily: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$myImage: 20%;
+$bgcolor: #72a2c0;
+$fontcolor: rgb(50, 40, 31);
+
+@mixin Font ($font-size){
+  font-size: $font-size;
+}
+
+.header {
+    @include Font(55px);
+    font-family: $fontFamily;
+    margin: 20px;
+    font-weight: bold;
+    color: #dc9811;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.nav{
+  @include Font(30px);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+  display: flex;
+  justify-content: center;
+}
+
+.link{
+  padding: 15px;
+  margin-left: 20px;
+  color: $myColor;
+}
+
+body{
+  background-color: #192e5b;
+}
+
+.myImageStyle {
+  width: 60%;
+  height: auto;
+  padding: 1px; 
+  margin: auto; 
+}
+
+.cityImage {
+  text-align: center;
+  width: 100%;
+}
+
+.travellersImage {
+  text-align: center;
+  width: 85%;
+  margin-left: 105px;
+}
+
+.myHeaderImageStyle {
+  width: 10%;
+  height: auto;
+}
+
+li{
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+}
+
+ul{
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: $fontFamily;
+}
+
+.container{
+  background-color: #8da6b7 ;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.currencyBlock{
+  background-color: #8da6b7;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #192e5b;
+  font-family: $fontFamily;
+  font-size: 20px; 
+  height: auto;
+}
+
+.details{
+  background-color: #8da6b7;
+  border-radius: 10px;
+  color: #192e5b;
+  font-family: $fontFamily;
+  font-size: 20px; 
+  height: auto;
+  text-align: center;
+}
+
+.title{
+  color: #192e5b;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.button {
+  font-family: $fontFamily;
+  color: #192e5b;
+  font-weight: bold;
+}
+
+.weatherDiv {
+  @include Font(55px);
+  font-family: $fontFamily;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+.footer {
+  background-color: #8da6b7;
+  border-radius: 10px;
+  text-align: center;
+  color: #192e5b;
+  font-family: $fontFamily;
+  font-size: 20px; 
+  height: auto;
+  margin-top: 28px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.custom-accordion {
+  font-family: $fontFamily;
+  font-size: 20px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.weatherPage{
+  background-color: #8da6b7;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #192e5b;
+  font-family: $fontFamily;
+  font-size: 20px; 
+  height: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 20px;
+}
+
+.weatherInfoStyle{
+  margin: 20px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+
+.citySelectorBlock{
+  // background-color: #8da6b7;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: $fontFamily;
+  font-size: 25px; 
+  height: auto;
+  float: left;
+  width: 20%;
+}
+
+.cityDisplayBlock{
+  background-color: #8da6b7;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #192e5b;
+  font-family: $fontFamily;
+  font-size: 20px; 
+  height: auto;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.cityTitle{
+  color: white;
+  font-family: $fontFamily;
+}
+
+.imageContainer{
+  display: flex;
+  gap: 30px;
+}
